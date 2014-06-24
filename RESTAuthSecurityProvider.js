@@ -173,13 +173,13 @@ function RESTAuthSecurityProviderCreate() {
 				name : "loginBaseURL",
 				display : "loginBaseURL",
 				type : "text",
-				length : 60,
+				length : 120,
 				helpURL : ""
 			}, {
 				name : "loginGroupURL",
 				display : "loginGroupURL",
 				type : "text",
-				length : 60,
+				length : 120,
 				helpURL : ""
 			}, {
 				name : "keyLifetimeMinutes",
