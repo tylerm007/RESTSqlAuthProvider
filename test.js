@@ -27,7 +27,7 @@ load("RESTAuthSecurityProvider.js");
 var configSetup = {
    loginBaseURL: 'https://demotest.espressologic.com/rest/el-test/demo/v1/employee',
    loginGroupURL : 'https://demotest.espressologic.com/rest/el-test/demo/v1/employee',
-   logonApiKey: 'n3OKKu9OjxWP3HFYJQBm',
+   logonApiKey: 'yourkey',
    keyLifetimeMinutes : 60
 };
 
