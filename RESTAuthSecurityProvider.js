@@ -161,7 +161,10 @@ function RESTAuthSecurityProviderCreate() {
 		return {
 			current : {
 
-				"keyLifetimeMinutes" : configSetup.keyLifetimeMinutes
+				"keyLifetimeMinutes" : configSetup.keyLifetimeMinutes,
+				"logonApiKey" : 	configSetup.logonApiKey,
+				"loginBaseURL" :	configSetup.loginBaseURL,
+				"loginGroupURL" :  	configSetup.loginGroupURL
 			},
 			fields : [ {
 				name : "logonApiKey",
