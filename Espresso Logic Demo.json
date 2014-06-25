@@ -1,0 +1,2436 @@
+[
+  {
+    "@metadata": {
+      "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport/1000",
+      "checksum": "A:8a3f267092cbb2f7"
+    },
+    "ident": 1000,
+    "ts": "2014-06-25T12:23:57.000+0000",
+    "name": "Espresso Logic Demo",
+    "url_name": "demo",
+    "comments": null,
+    "status": null,
+    "account_ident": 1000,
+    "authprovider_ident": 1009,
+    "Users": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Users/1001",
+          "checksum": "A:c3ee786629b40d04"
+        },
+        "ident": 1001,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "name": "demo",
+        "fullname": "Demo user",
+        "email": "admin@espressologic.com",
+        "status": "A",
+        "roles": "App owner,",
+        "data": "",
+        "comments": null,
+        "apikey_lifespan": null,
+        "password_hash": "nNeQDuMBkLTlb9xaKBhhBT/3mO1OQ27bjhhanUp180jHGtyZRKXFhJ0B1LR/46ogLYWobrs/B/+o7ZQBIyVJKQ==",
+        "password_salt": "uoMUHc0PDh+CN2ttRtzxGZd41mB/GHIzRP7kqsly",
+        "project_ident": 1000
+      }
+    ],
+    "DbaseSchemas": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.DbaseSchemas/1000",
+          "checksum": "A:de6f5d884c06aa62"
+        },
+        "ident": 1000,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "conn_type": null,
+        "name": "Espresso Logic Demo",
+        "comments": null,
+        "url": "jdbc:mysql://db-004.d.espressologic.com:3306/dbtest_demo",
+        "catalog_name": "dbtest_demo",
+        "schema_name": null,
+        "user_name": "dbtest_demo",
+        "password": "plaintext:kahuna_test!",
+        "salt": "salt:plaintext",
+        "port_num": null,
+        "read_only": false,
+        "schema_editable": false,
+        "active": true,
+        "status": null,
+        "project_ident": 1000,
+        "dbasetype_ident": 1,
+        "TableInfos": [
+        ]
+      }
+    ],
+    "ApiVersions": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions/1000",
+          "checksum": "A:11e7838dbe28cd56"
+        },
+        "ident": 1000,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "name": "v1",
+        "comments": "",
+        "project_ident": 1000,
+        "Resources": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1002",
+              "checksum": "A:01671fc36a1d930c"
+            },
+            "ident": 1002,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "LineItem",
+            "name": "LineItems",
+            "description": "LineItems of Order",
+            "is_collection": "Y",
+            "join_condition": "order_number=[order_number]",
+            "filter": null,
+            "sorting": "product_number asc",
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1001,
+            "root_ident": 1000,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1009",
+              "checksum": "A:a339597c43653964"
+            },
+            "ident": 1009,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "LineItem",
+            "name": "LineItems",
+            "description": "API example",
+            "is_collection": "Y",
+            "join_condition": "order_number=[order_number]",
+            "filter": null,
+            "sorting": "product_number asc",
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1008,
+            "root_ident": 1007,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1011",
+                  "checksum": "A:49546311b48c9827"
+                },
+                "ident": 1011,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "ProductNumber",
+                "description": "",
+                "column_name": "product_number",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1009,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1012",
+                  "checksum": "A:ca0d2c3278848583"
+                },
+                "ident": 1012,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "OrderNumber",
+                "description": "",
+                "column_name": "order_number",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1009,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1013",
+                  "checksum": "A:a53166f3519cda59"
+                },
+                "ident": 1013,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Quantity",
+                "description": "",
+                "column_name": "qty_ordered",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1009,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1014",
+                  "checksum": "A:9be9cae21cf171a0"
+                },
+                "ident": 1014,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Price",
+                "description": "",
+                "column_name": "product_price",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1009,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1015",
+                  "checksum": "A:1f0c5b6769b6964d"
+                },
+                "ident": 1015,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Amount",
+                "description": "",
+                "column_name": "amount",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1009,
+                "code_type": null
+              }
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1001",
+              "checksum": "A:dd4b2f7dfe58176c"
+            },
+            "ident": 1001,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "PurchaseOrder",
+            "name": "Orders",
+            "description": "Orders of Customer",
+            "is_collection": "Y",
+            "join_condition": "customer_name=[name]",
+            "filter": null,
+            "sorting": "order_number desc",
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1000,
+            "root_ident": 1000,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1008",
+              "checksum": "A:d20819efbc5a8f10"
+            },
+            "ident": 1008,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "PurchaseOrder",
+            "name": "Orders",
+            "description": "API example",
+            "is_collection": "Y",
+            "join_condition": "customer_name=[name]",
+            "filter": null,
+            "sorting": "order_number desc",
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1007,
+            "root_ident": 1007,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1007",
+                  "checksum": "A:c36f510eea856d63"
+                },
+                "ident": 1007,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "OrderNumber",
+                "description": "",
+                "column_name": "order_number",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1008,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1008",
+                  "checksum": "A:fa247c2fcaee64e5"
+                },
+                "ident": 1008,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "TotalAmount",
+                "description": "",
+                "column_name": "amount_total",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1008,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1009",
+                  "checksum": "A:05a5c411a503a58e"
+                },
+                "ident": 1009,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Paid",
+                "description": "",
+                "column_name": "paid",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1008,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1010",
+                  "checksum": "A:9020b5d908bc8f98"
+                },
+                "ident": 1010,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Notes",
+                "description": "",
+                "column_name": "notes",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1008,
+                "code_type": null
+              }
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1000",
+              "checksum": "A:eb8a541b814c4e29"
+            },
+            "ident": 1000,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "customer",
+            "name": "CustomerBusinessObject",
+            "description": "all customer attributes and related child data",
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": "name asc",
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": null,
+            "root_ident": 1000,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1005",
+              "checksum": "A:b859a001da0b8f7d"
+            },
+            "ident": 1005,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "customer",
+            "name": "AllCustomers",
+            "description": "Query for all customers",
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": null,
+            "root_ident": 1005,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1000",
+                  "checksum": "A:0b7a6dff31978b4f"
+                },
+                "ident": 1000,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "name",
+                "description": "",
+                "column_name": "name",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1005,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1001",
+                  "checksum": "A:8077221348043242"
+                },
+                "ident": 1001,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "balance",
+                "description": "",
+                "column_name": "balance",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1005,
+                "code_type": null
+              }
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1007",
+              "checksum": "A:ac2850219462f4d7"
+            },
+            "ident": 1007,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "customer",
+            "name": "Customers",
+            "description": "API example - illustrates attribute aliasing / projection",
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": null,
+            "root_ident": 1007,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1004",
+                  "checksum": "A:1f2210a24ade29bd"
+                },
+                "ident": 1004,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Name",
+                "description": "",
+                "column_name": "name",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1007,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1005",
+                  "checksum": "A:ddb2ece0b6b0c880"
+                },
+                "ident": 1005,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Balance",
+                "description": "",
+                "column_name": "balance",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1007,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1006",
+                  "checksum": "A:afc44e5e8ef10437"
+                },
+                "ident": 1006,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "CreditLimit",
+                "description": "",
+                "column_name": "credit_limit",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1007,
+                "code_type": null
+              }
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1003",
+              "checksum": "A:ac116e1ffa6dee83"
+            },
+            "ident": 1003,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "product",
+            "name": "Product",
+            "description": "Product for LineItem",
+            "is_collection": "N",
+            "join_condition": "product_number=[product_number]",
+            "filter": null,
+            "sorting": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1002,
+            "root_ident": 1000,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1006",
+              "checksum": "A:81522ad820c4526a"
+            },
+            "ident": 1006,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "product",
+            "name": "Products",
+            "description": "Query for all products",
+            "is_collection": "Y",
+            "join_condition": null,
+            "filter": null,
+            "sorting": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": null,
+            "root_ident": 1006,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1002",
+                  "checksum": "A:2b9cc2e369b1c1f7"
+                },
+                "ident": 1002,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "name",
+                "description": "",
+                "column_name": "name",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1006,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1003",
+                  "checksum": "A:900d4e08c0b5599a"
+                },
+                "ident": 1003,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "price",
+                "description": "",
+                "column_name": "price",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1006,
+                "code_type": null
+              }
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1010",
+              "checksum": "A:744f6586286e68b3"
+            },
+            "ident": 1010,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "product",
+            "name": "Product",
+            "description": "Query for product",
+            "is_collection": "N",
+            "join_condition": "product_number=[product_number]",
+            "filter": null,
+            "sorting": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1009,
+            "root_ident": 1007,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1016",
+                  "checksum": "A:3bdf02884b1bd6de"
+                },
+                "ident": 1016,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Name",
+                "description": "",
+                "column_name": "name",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1010,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1017",
+                  "checksum": "A:fdb38daa2121bd97"
+                },
+                "ident": 1017,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "Price",
+                "description": "",
+                "column_name": "price",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1010,
+                "code_type": null
+              },
+              {
+                "@metadata": {
+                  "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources.ResourceAttributes/1018",
+                  "checksum": "A:1618e440f8c33c98"
+                },
+                "ident": 1018,
+                "ts": "2014-06-23T12:31:15.000+0000",
+                "name": "ProductId",
+                "description": "",
+                "column_name": "product_number",
+                "format": null,
+                "formula": null,
+                "is_defined_key_part": false,
+                "resource_ident": 1010,
+                "code_type": null
+              }
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1011",
+              "checksum": "A:c11dddaf19e87faa"
+            },
+            "ident": 1011,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "product",
+            "name": "ProductDetailLink",
+            "description": "Product Detail",
+            "is_collection": "N",
+            "join_condition": "product_number=[product_number]",
+            "filter": null,
+            "sorting": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1010,
+            "root_ident": 1007,
+            "linked_ident": 1006,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+            ]
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiVersions.Resources/1004",
+              "checksum": "A:3153161259406275"
+            },
+            "ident": 1004,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "resource_type_ident": 1,
+            "table_name": "purchaseorder_audit",
+            "name": "OrderAudits",
+            "description": "Audits of Order",
+            "is_collection": "Y",
+            "join_condition": "order_number=[order_number]",
+            "filter": null,
+            "sorting": null,
+            "caching": null,
+            "custom_class": null,
+            "code_text": null,
+            "filter_code": null,
+            "serial_filter": null,
+            "container_ident": 1002,
+            "root_ident": 1000,
+            "linked_ident": null,
+            "apiversion_ident": 1000,
+            "ResourceAttributes": [
+            ]
+          }
+        ]
+      }
+    ],
+    "ProjectOptions": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1000",
+          "checksum": "A:08ac17f9c53c0f63"
+        },
+        "ident": 1000,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "false",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 1
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1001",
+          "checksum": "A:df5c177824acc8d8"
+        },
+        "ident": 1001,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "http://www.espressologic.com/rest/",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 2
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1002",
+          "checksum": "A:f4896b72c8b79c89"
+        },
+        "ident": 1002,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "false",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 3
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1003",
+          "checksum": "A:ccd66eabe7fd2782"
+        },
+        "ident": 1003,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "@metadata",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 4
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1004",
+          "checksum": "A:cc0cade8b9379c40"
+        },
+        "ident": 1004,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "2000",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 5
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1005",
+          "checksum": "A:4f905ed1c3724d20"
+        },
+        "ident": 1005,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "6000",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 6
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1006",
+          "checksum": "A:09e7f6c00b5f49a3"
+        },
+        "ident": 1006,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "20",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 7
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1007",
+          "checksum": "A:60788eff2f3367bf"
+        },
+        "ident": 1007,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "5000",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 8
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1008",
+          "checksum": "A:ea90a21942e115cb"
+        },
+        "ident": 1008,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "20",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 9
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1009",
+          "checksum": "A:eb07b0e452c2fe7d"
+        },
+        "ident": 1009,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "100",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 10
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectOptions/1010",
+          "checksum": "A:4897c56011daedc6"
+        },
+        "ident": 1010,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "option_value": "2000",
+        "project_ident": 1000,
+        "projectoptiontype_ident": 11
+      }
+    ],
+    "ProjectLibraries": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1001",
+          "checksum": "A:0606e9012b04960e"
+        },
+        "ident": 1001,
+        "ts": "2014-06-24T21:58:03.000+0000",
+        "logic_library_ident": 506,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1004",
+          "checksum": "A:1e7f29da0c63d302"
+        },
+        "ident": 1004,
+        "ts": "2014-06-24T23:36:29.000+0000",
+        "logic_library_ident": 2,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1005",
+          "checksum": "A:1f39677dfc1e4e7e"
+        },
+        "ident": 1005,
+        "ts": "2014-06-24T23:36:29.000+0000",
+        "logic_library_ident": 5,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1006",
+          "checksum": "A:0fad6bb54f701001"
+        },
+        "ident": 1006,
+        "ts": "2014-06-24T23:36:29.000+0000",
+        "logic_library_ident": 4,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1007",
+          "checksum": "A:a03501008c7c7a03"
+        },
+        "ident": 1007,
+        "ts": "2014-06-24T23:36:29.000+0000",
+        "logic_library_ident": 1,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1008",
+          "checksum": "A:3992152554ebaee7"
+        },
+        "ident": 1008,
+        "ts": "2014-06-24T23:36:29.000+0000",
+        "logic_library_ident": 503,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1009",
+          "checksum": "A:bfe6ac94cd6680ac"
+        },
+        "ident": 1009,
+        "ts": "2014-06-24T23:36:29.000+0000",
+        "logic_library_ident": 501,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ProjectLibraries/1010",
+          "checksum": "A:47846f32c8e211dc"
+        },
+        "ident": 1010,
+        "ts": "2014-06-25T12:13:20.000+0000",
+        "logic_library_ident": 1002,
+        "project_ident": 1000
+      }
+    ],
+    "Rules": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Rules/1004",
+          "checksum": "A:6712e6d25e627087"
+        },
+        "ident": 1004,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "entity_name": "LineItem",
+        "attribute_name": "amount",
+        "prop1": null,
+        "prop2": null,
+        "prop3": null,
+        "prop4": "javascript",
+        "prop5": null,
+        "rule_text1": "if (row.qty_ordered <= 6)  // discount (using conditional JavaScript logic)\n   return row.product_price * row.qty_ordered;\nelse\n   return row.product_price * row.qty_ordered * 0.8;\n",
+        "rule_text2": null,
+        "rule_text3": null,
+        "rule_text4": null,
+        "rule_text5": null,
+        "predicate": null,
+        "name": "Discounted price*qty",
+        "auto_name": "Derive amount as if (row.qty_ordered <= 6)  // discount (using conditional JavaScript logic)\n   return row.product_price * row.qty_ordered;\nelse\n  ...",
+        "verbs": null,
+        "comments": "Reactive Logic is expressed in JavaScript, so you use... \n- conditional logic (as above),\n- standard JavaScript services (e.g., moment date functions - enable in Project > Libraries),\n- SQL / external services.... whatever is required.",
+        "active": true,
+        "project_ident": 1000,
+        "ruletype_ident": 3
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Rules/1003",
+          "checksum": "A:866462d6dcb77baa"
+        },
+        "ident": 1003,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "entity_name": "LineItem",
+        "attribute_name": "product_price",
+        "prop1": null,
+        "prop2": null,
+        "prop3": null,
+        "prop4": null,
+        "prop5": null,
+        "rule_text1": "product",
+        "rule_text2": "price",
+        "rule_text3": null,
+        "rule_text4": null,
+        "rule_text5": null,
+        "predicate": null,
+        "name": null,
+        "auto_name": "Derive product_price as parentcopy(product.price)",
+        "verbs": null,
+        "comments": "Parent copy means order unaffected by product price changes",
+        "active": true,
+        "project_ident": 1000,
+        "ruletype_ident": 4
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Rules/1005",
+          "checksum": "A:41f4ca9335e9d472"
+        },
+        "ident": 1005,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "entity_name": "PurchaseOrder",
+        "attribute_name": null,
+        "prop1": null,
+        "prop2": null,
+        "prop3": null,
+        "prop4": "javascript",
+        "prop5": null,
+        "rule_text1": "if (\"INSERT\" != logicContext.initialVerb && row.amount_total != oldRow.amount_total) {\n  var newPurchaseorder_audit = logicContext.createPersistentBean(\"purchaseorder_audit\");\n\n  newPurchaseorder_audit.amount_total = oldRow.amount_total;  // set attributes from old values\n  newPurchaseorder_audit.paid = oldRow.paid;\n  newPurchaseorder_audit.customer_name = oldRow.customer_name;\n\n  newPurchaseorder_audit.order_number = oldRow.order_number;  // set the foreign key\n  \n  logicContext.insert(newPurchaseorder_audit);                // saves (fires logic)\n}\n\n// an alternative when the new values are wanted\n// if (\"INSERT\" != logicContext.initialVerb && row.amount_total != oldRow.amount_total)\n//   SysLogic.insertChildFrom(\"purchaseorder_audit\", logicContext);",
+        "rule_text2": null,
+        "rule_text3": null,
+        "rule_text4": null,
+        "rule_text5": null,
+        "predicate": null,
+        "name": "Audit Purchase Order amount changes",
+        "auto_name": "Event: if (\"INSERT\" != logicContext.initialVerb && row.amount_total != oldRow.amount_total) {\n  var newPurchaseorder_audit = logicContext.createPer...",
+        "verbs": "UPDATE,",
+        "comments": "row, logicContext passed in from engine; initialVerb is *client* action (e.g., POST), irrespective of subsequent updates (e.g., from item adjustments)\nearly events execute before reactive expressions, events execute after reactive expressions, commit events execute after all rows are processed",
+        "active": true,
+        "project_ident": 1000,
+        "ruletype_ident": 7
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Rules/1002",
+          "checksum": "A:a6b326f2f9783c0b"
+        },
+        "ident": 1002,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "entity_name": "PurchaseOrder",
+        "attribute_name": "amount_total",
+        "prop1": null,
+        "prop2": null,
+        "prop3": null,
+        "prop4": null,
+        "prop5": null,
+        "rule_text1": "LineItemList",
+        "rule_text2": null,
+        "rule_text3": "amount",
+        "rule_text4": null,
+        "rule_text5": null,
+        "predicate": null,
+        "name": null,
+        "auto_name": "Derive amount_total as sum(LineItemList.amount)",
+        "verbs": null,
+        "comments": "sum of line item amounts",
+        "active": true,
+        "project_ident": 1000,
+        "ruletype_ident": 1
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Rules/1000",
+          "checksum": "A:d2ab929464d76dae"
+        },
+        "ident": 1000,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "entity_name": "customer",
+        "attribute_name": null,
+        "prop1": null,
+        "prop2": null,
+        "prop3": null,
+        "prop4": "javascript",
+        "prop5": null,
+        "rule_text1": "return row.balance <= row.credit_limit;",
+        "rule_text2": "Customer {name}'s balance: {balance|#,##0.00} exceeds their credit limit: {credit_limit|#,##0.00}",
+        "rule_text3": null,
+        "rule_text4": null,
+        "rule_text5": null,
+        "predicate": null,
+        "name": null,
+        "auto_name": "Validation balance <= credit_limit",
+        "verbs": null,
+        "comments": "balance cannot exceed credit limit, else throw exception",
+        "active": true,
+        "project_ident": 1000,
+        "ruletype_ident": 5
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Rules/1001",
+          "checksum": "A:275ebc5b21e5ff62"
+        },
+        "ident": 1001,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "entity_name": "customer",
+        "attribute_name": "balance",
+        "prop1": null,
+        "prop2": null,
+        "prop3": null,
+        "prop4": null,
+        "prop5": null,
+        "rule_text1": "PurchaseOrderList",
+        "rule_text2": "paid = false",
+        "rule_text3": "amount_total",
+        "rule_text4": null,
+        "rule_text5": null,
+        "predicate": null,
+        "name": null,
+        "auto_name": "Derive balance as sum(PurchaseOrderList.amount_total where paid=false)",
+        "verbs": null,
+        "comments": "sum of unpaid order totals; re-used over all changes to orders (pay, insert, delete etc.), optimized (not select sum..)",
+        "active": true,
+        "project_ident": 1000,
+        "ruletype_ident": 1
+      }
+    ],
+    "ApiKeys": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1000",
+          "checksum": "A:4dea98ad456da943"
+        },
+        "ident": 1000,
+        "ts": "2014-06-23T12:31:14.000+0000",
+        "name": "Broad access",
+        "description": null,
+        "apikey": "demo_full",
+        "status": "A",
+        "default_access": null,
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1020",
+          "checksum": "A:d7c7663d6a74efc4"
+        },
+        "ident": 1020,
+        "ts": "2014-06-24T20:35:38.000+0000",
+        "name": "LoginKey",
+        "description": null,
+        "apikey": "n3OKKu9OjxWP3HFYJQBm",
+        "status": "A",
+        "default_access": null,
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": null,
+        "data": null,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1001",
+          "checksum": "A:5a849ed17cea3799"
+        },
+        "ident": 1001,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "name": "Restricted access",
+        "description": null,
+        "apikey": "demo_restricted",
+        "status": "A",
+        "default_access": null,
+        "expiration": null,
+        "logging": null,
+        "user_identifier": null,
+        "data": "customerName=Bravo Hardware",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1002",
+          "checksum": "A:61d883c584640258"
+        },
+        "ident": 1002,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "name": "SalesRep",
+        "description": null,
+        "apikey": "SalesRepApiKey",
+        "status": "A",
+        "default_access": null,
+        "expiration": null,
+        "logging": "*=FINE",
+        "user_identifier": "Sam",
+        "data": null,
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1010",
+          "checksum": "A:c1b2cfc4b3d30f6c"
+        },
+        "ident": 1010,
+        "ts": "2014-06-23T17:58:43.000+0000",
+        "name": "Temp key for demo [2014-06-23 17:58:43.075]",
+        "description": null,
+        "apikey": "008a81b126df111de0c2dd2a15b26680",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-24T17:58:43.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1011",
+          "checksum": "A:192d833453d7c473"
+        },
+        "ident": 1011,
+        "ts": "2014-06-23T18:08:37.000+0000",
+        "name": "Temp key for demo [2014-06-23 18:08:37.066]",
+        "description": null,
+        "apikey": "9a676aa0563b810cdaa39b222aa66338",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-24T18:08:37.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1016",
+          "checksum": "A:01fb03425d877de1"
+        },
+        "ident": 1016,
+        "ts": "2014-06-24T00:39:52.000+0000",
+        "name": "Temp key for demo [2014-06-24 00:39:52.150]",
+        "description": null,
+        "apikey": "f894d2f762ba74c2972f1e14c862dca5",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-25T00:39:52.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1017",
+          "checksum": "A:884ae2cb5cfd0be1"
+        },
+        "ident": 1017,
+        "ts": "2014-06-24T11:08:03.000+0000",
+        "name": "Temp key for demo [2014-06-24 11:08:03.511]",
+        "description": null,
+        "apikey": "b4853522bd008b68ecf3ccc63414aa58",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-25T11:08:04.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1018",
+          "checksum": "A:d76ac84c8f30a373"
+        },
+        "ident": 1018,
+        "ts": "2014-06-24T11:18:30.000+0000",
+        "name": "Temp key for demo [2014-06-24 11:18:30.008]",
+        "description": null,
+        "apikey": "8b14d782b93411942c781bd3f6d8a62b",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-25T11:18:30.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1024",
+          "checksum": "A:d90db19194f7272e"
+        },
+        "ident": 1024,
+        "ts": "2014-06-25T07:38:40.000+0000",
+        "name": "Temp key for demo [2014-06-25 07:38:40.167]",
+        "description": null,
+        "apikey": "145c2370ba31453cd6d0ac10b56def1c",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T07:38:40.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1025",
+          "checksum": "A:b16c27d8c31867a2"
+        },
+        "ident": 1025,
+        "ts": "2014-06-25T07:39:30.000+0000",
+        "name": "Temp key for demo [2014-06-25 07:39:30.732]",
+        "description": null,
+        "apikey": "80dc368e3cebc8da78ed9d0c818b8589",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T07:39:31.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1026",
+          "checksum": "A:af16eb30bea1f707"
+        },
+        "ident": 1026,
+        "ts": "2014-06-25T08:02:59.000+0000",
+        "name": "Temp key for demo [2014-06-25 08:02:59.595]",
+        "description": null,
+        "apikey": "561160219fb765c11b6a67624166c1a9",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T08:03:00.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1027",
+          "checksum": "A:dface31d47e369e4"
+        },
+        "ident": 1027,
+        "ts": "2014-06-25T11:12:24.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:12:24.206]",
+        "description": null,
+        "apikey": "8ea1f9432d9499c5dd0d463c640d6d88",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:12:24.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1028",
+          "checksum": "A:c62c5c9cfab1b66f"
+        },
+        "ident": 1028,
+        "ts": "2014-06-25T11:15:08.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:15:08.910]",
+        "description": null,
+        "apikey": "f6afdc7336d0036f9ad50eecba26bf2c",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:15:09.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1029",
+          "checksum": "A:7f8d8ac2c31e3e27"
+        },
+        "ident": 1029,
+        "ts": "2014-06-25T11:18:45.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:18:45.545]",
+        "description": null,
+        "apikey": "a952ad20e8216a9d81b1ca6ac73c5d28",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:18:46.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1030",
+          "checksum": "A:3f3acca7dc3adce2"
+        },
+        "ident": 1030,
+        "ts": "2014-06-25T11:27:04.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:27:04.315]",
+        "description": null,
+        "apikey": "d296dbf7008ae0c475d6945ee6d39093",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:27:04.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1031",
+          "checksum": "A:55162179910738fd"
+        },
+        "ident": 1031,
+        "ts": "2014-06-25T11:44:04.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:44:04.235]",
+        "description": null,
+        "apikey": "56c4d7269abdc5b6c382a72ac55399e8",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:44:04.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1032",
+          "checksum": "A:335082ebf67dd55d"
+        },
+        "ident": 1032,
+        "ts": "2014-06-25T11:45:35.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:45:35.102]",
+        "description": null,
+        "apikey": "17d387802d2356bf5b8093af23f7ab69",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:45:35.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1033",
+          "checksum": "A:d497d5c26e98ce89"
+        },
+        "ident": 1033,
+        "ts": "2014-06-25T11:51:09.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:51:09.701]",
+        "description": null,
+        "apikey": "b270eb1c61ccefd6551ee7b4ce0c53f1",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:51:10.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1034",
+          "checksum": "A:f42a569188d2d3ac"
+        },
+        "ident": 1034,
+        "ts": "2014-06-25T11:57:41.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:57:41.099]",
+        "description": null,
+        "apikey": "e3f0bff830d37ae8d5341bdf9f1fb76b",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:57:41.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1035",
+          "checksum": "A:a97e299952790a55"
+        },
+        "ident": 1035,
+        "ts": "2014-06-25T11:59:15.000+0000",
+        "name": "Temp key for demo [2014-06-25 11:59:15.994]",
+        "description": null,
+        "apikey": "8b5ec3daba789191182cfc26102cf81a",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T11:59:16.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1036",
+          "checksum": "A:3c5ec5ff16b314ae"
+        },
+        "ident": 1036,
+        "ts": "2014-06-25T12:00:52.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:00:52.667]",
+        "description": null,
+        "apikey": "8e270f681b6074acce8f290304f05bf0",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:00:53.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1037",
+          "checksum": "A:939668205654ea7c"
+        },
+        "ident": 1037,
+        "ts": "2014-06-25T12:02:36.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:02:36.406]",
+        "description": null,
+        "apikey": "32cf7c3ae1c1ffedfa02b5f835c43753",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:02:36.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1038",
+          "checksum": "A:9774ac3503a228c6"
+        },
+        "ident": 1038,
+        "ts": "2014-06-25T12:03:49.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:03:49.439]",
+        "description": null,
+        "apikey": "3d622874eabd70ed44c6f79a0f24af35",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:03:49.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1039",
+          "checksum": "A:b42c8396846f2d29"
+        },
+        "ident": 1039,
+        "ts": "2014-06-25T12:05:14.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:05:14.381]",
+        "description": null,
+        "apikey": "8aadbd7a53e3bc73d5588b04f87862b7",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:05:14.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1040",
+          "checksum": "A:10e7a2ebc92b3574"
+        },
+        "ident": 1040,
+        "ts": "2014-06-25T12:06:22.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:06:22.843]",
+        "description": null,
+        "apikey": "ef493c43631b5910f79b4a0c6842a4fd",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:06:23.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1041",
+          "checksum": "A:d5fe3cc92b81bbf1"
+        },
+        "ident": 1041,
+        "ts": "2014-06-25T12:07:23.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:07:23.682]",
+        "description": null,
+        "apikey": "5307387d4bbc0f3dbbb0eee65fe868b8",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:07:24.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1042",
+          "checksum": "A:8a982d987f6f3b5f"
+        },
+        "ident": 1042,
+        "ts": "2014-06-25T12:08:32.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:08:32.720]",
+        "description": null,
+        "apikey": "4c38d442d25733a527f341ac3f9c327e",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:08:33.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1044",
+          "checksum": "A:014c7960095ed826"
+        },
+        "ident": 1044,
+        "ts": "2014-06-25T12:09:38.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:09:38.022]",
+        "description": null,
+        "apikey": "4159abccc86b8d650de22ad056afe86e",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:09:38.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1045",
+          "checksum": "A:7d810fc0866ab80a"
+        },
+        "ident": 1045,
+        "ts": "2014-06-25T12:11:14.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:11:14.657]",
+        "description": null,
+        "apikey": "ce6d3c4676fc9a16257e35a9892e3571",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:11:15.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1046",
+          "checksum": "A:b485e04de8b0e201"
+        },
+        "ident": 1046,
+        "ts": "2014-06-25T12:12:04.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:12:04.417]",
+        "description": null,
+        "apikey": "6da69521666d8ab44d7b3faa7c0117af",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:12:04.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1047",
+          "checksum": "A:673479f5d6f4d5b6"
+        },
+        "ident": 1047,
+        "ts": "2014-06-25T12:13:13.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:13:13.095]",
+        "description": null,
+        "apikey": "47e569dcd777f76df8238900ccf9270b",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:13:13.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1048",
+          "checksum": "A:91bdd83bec4ab884"
+        },
+        "ident": 1048,
+        "ts": "2014-06-25T12:14:27.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:14:27.837]",
+        "description": null,
+        "apikey": "4d254b20d7c29e0202581ea206c6765c",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:14:28.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1049",
+          "checksum": "A:f39e0cf07dd10512"
+        },
+        "ident": 1049,
+        "ts": "2014-06-25T12:15:48.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:15:48.423]",
+        "description": null,
+        "apikey": "e1b0a6ff8478e180b493a0a175820804",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:15:48.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1050",
+          "checksum": "A:a07a7bdabc81fc3a"
+        },
+        "ident": 1050,
+        "ts": "2014-06-25T12:17:37.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:17:37.690]",
+        "description": null,
+        "apikey": "e9077baf1b13077cf532368e9e852c74",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:17:38.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1051",
+          "checksum": "A:7050facab53005c4"
+        },
+        "ident": 1051,
+        "ts": "2014-06-25T12:18:31.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:18:31.774]",
+        "description": null,
+        "apikey": "bb50259764ece55e39ab448d15a16d8c",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:18:32.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1054",
+          "checksum": "A:9c2d7a40d4671698"
+        },
+        "ident": 1054,
+        "ts": "2014-06-25T12:22:21.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:22:21.274]",
+        "description": null,
+        "apikey": "d6e732ab8617d33d480f5afdd8b7b5cd",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:22:21.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1055",
+          "checksum": "A:db7cc6f87cd3ea81"
+        },
+        "ident": 1055,
+        "ts": "2014-06-25T12:23:15.000+0000",
+        "name": "Temp key for demo [2014-06-25 12:23:15.481]",
+        "description": null,
+        "apikey": "3007b0ed05693ed56272ddcf3ea62ef4",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:23:15.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "demo",
+        "data": "username=demo",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1052",
+          "checksum": "A:bc6c0a325ca5f985"
+        },
+        "ident": 1052,
+        "ts": "2014-06-25T12:19:44.000+0000",
+        "name": "Temp key for sam [2014-06-25 12:19:44.864]",
+        "description": null,
+        "apikey": "c9e149e7de1d7a9d03c76cae51718b5a",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:19:45.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "sam",
+        "data": "",
+        "project_ident": 1000
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.ApiKeys/1053",
+          "checksum": "A:97cfeb324cfd16d8"
+        },
+        "ident": 1053,
+        "ts": "2014-06-25T12:22:20.000+0000",
+        "name": "Temp key for sam [2014-06-25 12:22:20.385]",
+        "description": null,
+        "apikey": "bb8a4c9c783e85667151f8d25ee47c43",
+        "status": "A",
+        "default_access": null,
+        "expiration": "2014-06-26T12:22:20.000+0000",
+        "logging": "admini=FINE,buslog=FINE,depend=FINE,generl=FINE,persis=FINE,engine=FINE,resrcs=FINE,securi=FINE,sysdbg=FINE,ulogic=FINE",
+        "user_identifier": "sam",
+        "data": "",
+        "project_ident": 1000
+      }
+    ],
+    "EventHandlers": [
+    ],
+    "Handlers": [
+    ],
+    "Roles": [
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles/1000",
+          "checksum": "A:83c7d7cafff4992e"
+        },
+        "ident": 1000,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "name": "App owner",
+        "description": "Full permissions on the entire project",
+        "default_permission": "A",
+        "default_apivisibility": "TVPRM",
+        "project_ident": 1000,
+        "ApiKeyRoles": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1000",
+              "checksum": "A:0cc352c8e2974311"
+            },
+            "ident": 1000,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "apikey_ident": 1000,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1010",
+              "checksum": "A:ee79f857b0402f5e"
+            },
+            "ident": 1010,
+            "ts": "2014-06-23T17:58:43.000+0000",
+            "apikey_ident": 1010,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1011",
+              "checksum": "A:0fede318bfbbe0a0"
+            },
+            "ident": 1011,
+            "ts": "2014-06-23T18:08:37.000+0000",
+            "apikey_ident": 1011,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1016",
+              "checksum": "A:a13abed3adf08e50"
+            },
+            "ident": 1016,
+            "ts": "2014-06-24T00:39:52.000+0000",
+            "apikey_ident": 1016,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1017",
+              "checksum": "A:edf0749beeecf96a"
+            },
+            "ident": 1017,
+            "ts": "2014-06-24T11:08:03.000+0000",
+            "apikey_ident": 1017,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1018",
+              "checksum": "A:2af7d820168bd955"
+            },
+            "ident": 1018,
+            "ts": "2014-06-24T11:18:30.000+0000",
+            "apikey_ident": 1018,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1024",
+              "checksum": "A:81a51aca99487d83"
+            },
+            "ident": 1024,
+            "ts": "2014-06-25T07:38:40.000+0000",
+            "apikey_ident": 1024,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1025",
+              "checksum": "A:183c28e1f225cc5d"
+            },
+            "ident": 1025,
+            "ts": "2014-06-25T07:39:30.000+0000",
+            "apikey_ident": 1025,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1026",
+              "checksum": "A:6b9949adfbe58782"
+            },
+            "ident": 1026,
+            "ts": "2014-06-25T08:02:59.000+0000",
+            "apikey_ident": 1026,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1027",
+              "checksum": "A:884396ec4fd8a9a2"
+            },
+            "ident": 1027,
+            "ts": "2014-06-25T11:12:24.000+0000",
+            "apikey_ident": 1027,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1028",
+              "checksum": "A:308bc941c2886325"
+            },
+            "ident": 1028,
+            "ts": "2014-06-25T11:15:08.000+0000",
+            "apikey_ident": 1028,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1029",
+              "checksum": "A:2577b328d2359597"
+            },
+            "ident": 1029,
+            "ts": "2014-06-25T11:18:45.000+0000",
+            "apikey_ident": 1029,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1030",
+              "checksum": "A:b07b0721668643c4"
+            },
+            "ident": 1030,
+            "ts": "2014-06-25T11:27:04.000+0000",
+            "apikey_ident": 1030,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1031",
+              "checksum": "A:103fb9bf09a87050"
+            },
+            "ident": 1031,
+            "ts": "2014-06-25T11:44:04.000+0000",
+            "apikey_ident": 1031,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1032",
+              "checksum": "A:f6bb68df6aec398d"
+            },
+            "ident": 1032,
+            "ts": "2014-06-25T11:45:35.000+0000",
+            "apikey_ident": 1032,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1033",
+              "checksum": "A:5b025263bc43d08d"
+            },
+            "ident": 1033,
+            "ts": "2014-06-25T11:51:09.000+0000",
+            "apikey_ident": 1033,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1034",
+              "checksum": "A:d75994ce71e10d5e"
+            },
+            "ident": 1034,
+            "ts": "2014-06-25T11:57:41.000+0000",
+            "apikey_ident": 1034,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1035",
+              "checksum": "A:3756d76a794db30c"
+            },
+            "ident": 1035,
+            "ts": "2014-06-25T11:59:16.000+0000",
+            "apikey_ident": 1035,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1036",
+              "checksum": "A:514a1ce76c38612d"
+            },
+            "ident": 1036,
+            "ts": "2014-06-25T12:00:52.000+0000",
+            "apikey_ident": 1036,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1037",
+              "checksum": "A:c348c6042ad3fe66"
+            },
+            "ident": 1037,
+            "ts": "2014-06-25T12:02:36.000+0000",
+            "apikey_ident": 1037,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1038",
+              "checksum": "A:f468fc8e656c4bf0"
+            },
+            "ident": 1038,
+            "ts": "2014-06-25T12:03:49.000+0000",
+            "apikey_ident": 1038,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1039",
+              "checksum": "A:e76a3ad786dd0afb"
+            },
+            "ident": 1039,
+            "ts": "2014-06-25T12:05:14.000+0000",
+            "apikey_ident": 1039,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1040",
+              "checksum": "A:6b15256f564ed120"
+            },
+            "ident": 1040,
+            "ts": "2014-06-25T12:06:22.000+0000",
+            "apikey_ident": 1040,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1041",
+              "checksum": "A:aa3a7d7209b2fd19"
+            },
+            "ident": 1041,
+            "ts": "2014-06-25T12:07:23.000+0000",
+            "apikey_ident": 1041,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1042",
+              "checksum": "A:4fe5457b88a6b73e"
+            },
+            "ident": 1042,
+            "ts": "2014-06-25T12:08:32.000+0000",
+            "apikey_ident": 1042,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1044",
+              "checksum": "A:03b0163f31750d8b"
+            },
+            "ident": 1044,
+            "ts": "2014-06-25T12:09:38.000+0000",
+            "apikey_ident": 1044,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1045",
+              "checksum": "A:40ca60411485ff8c"
+            },
+            "ident": 1045,
+            "ts": "2014-06-25T12:11:14.000+0000",
+            "apikey_ident": 1045,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1046",
+              "checksum": "A:a57cf9d3aaef4eb5"
+            },
+            "ident": 1046,
+            "ts": "2014-06-25T12:12:04.000+0000",
+            "apikey_ident": 1046,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1047",
+              "checksum": "A:b0d207781702a502"
+            },
+            "ident": 1047,
+            "ts": "2014-06-25T12:13:13.000+0000",
+            "apikey_ident": 1047,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1048",
+              "checksum": "A:f9620dfe27569c95"
+            },
+            "ident": 1048,
+            "ts": "2014-06-25T12:14:27.000+0000",
+            "apikey_ident": 1048,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1049",
+              "checksum": "A:85499a31af8d1639"
+            },
+            "ident": 1049,
+            "ts": "2014-06-25T12:15:48.000+0000",
+            "apikey_ident": 1049,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1050",
+              "checksum": "A:194f55752ff69aeb"
+            },
+            "ident": 1050,
+            "ts": "2014-06-25T12:17:37.000+0000",
+            "apikey_ident": 1050,
+            "role_ident": 1000
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1053",
+              "checksum": "A:6ce53bccbfc5297c"
+            },
+            "ident": 1053,
+            "ts": "2014-06-25T12:23:15.000+0000",
+            "apikey_ident": 1055,
+            "role_ident": 1000
+          }
+        ],
+        "PermissionData": [
+        ],
+        "TablePermissions": [
+        ]
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles/1001",
+          "checksum": "A:b701b00112ba4a92"
+        },
+        "ident": 1001,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "name": "App user",
+        "description": "Limited permissions on the entire project",
+        "default_permission": "N",
+        "default_apivisibility": "RM",
+        "project_ident": 1000,
+        "ApiKeyRoles": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1001",
+              "checksum": "A:8ec39a1143b5378d"
+            },
+            "ident": 1001,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "apikey_ident": 1001,
+            "role_ident": 1001
+          }
+        ],
+        "PermissionData": [
+        ],
+        "TablePermissions": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1000",
+              "checksum": "A:b5171d30eaefec82"
+            },
+            "ident": 1000,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "Access customers",
+            "description": "only customers associated with current user, per apiKey (see Details tab, Globals)",
+            "table_name": "customer",
+            "column_names": null,
+            "predicate": "name='@{customerName}'",
+            "access_type": "R",
+            "role_ident": 1001
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1001",
+              "checksum": "A:c6639f2923c3490c"
+            },
+            "ident": 1001,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "Access orders",
+            "description": "only orders associated with customer(s) for current user, per apiKey (see Details tab, Globals)",
+            "table_name": "PurchaseOrder",
+            "column_names": null,
+            "predicate": "customer_name = '@{customerName}'",
+            "access_type": "R",
+            "role_ident": 1001
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1002",
+              "checksum": "A:0b227c08db94b5cb"
+            },
+            "ident": 1002,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "Access lineitems",
+            "description": "only line items associated with customer(s) for current user, per apiKey (see Details tab, Globals)",
+            "table_name": "LineItem",
+            "column_names": null,
+            "predicate": "lineitem_purchaseorder.customer_name = '@{customerName}'",
+            "access_type": "A",
+            "role_ident": 1001
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1003",
+              "checksum": "A:029068f96366555b"
+            },
+            "ident": 1003,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "Access products all restricted",
+            "description": "column security - product_number & name visible to all, but not insert",
+            "table_name": "product",
+            "column_names": "product_number,name",
+            "predicate": null,
+            "access_type": "RU",
+            "role_ident": 1001
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1004",
+              "checksum": "A:1ac8624ce41958ee"
+            },
+            "ident": 1004,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "Access products 2 full",
+            "description": "column security - product_number & name visible to all with insert, product 2 only",
+            "table_name": "product",
+            "column_names": null,
+            "predicate": "product_number = 2",
+            "access_type": "A",
+            "role_ident": 1001
+          }
+        ]
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles/1006",
+          "checksum": "A:6d13f1ad1e69016d"
+        },
+        "ident": 1006,
+        "ts": "2014-06-24T22:10:55.000+0000",
+        "name": "Customer",
+        "description": null,
+        "default_permission": "R",
+        "default_apivisibility": "TVRPM",
+        "project_ident": 1000,
+        "ApiKeyRoles": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1051",
+              "checksum": "A:1b53ab763734fada"
+            },
+            "ident": 1051,
+            "ts": "2014-06-25T12:19:44.000+0000",
+            "apikey_ident": 1052,
+            "role_ident": 1006
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1052",
+              "checksum": "A:97bf760c351f2f5c"
+            },
+            "ident": 1052,
+            "ts": "2014-06-25T12:22:20.000+0000",
+            "apikey_ident": 1053,
+            "role_ident": 1006
+          }
+        ],
+        "PermissionData": [
+        ],
+        "TablePermissions": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1008",
+              "checksum": "A:4e40f2e533ec77c9"
+            },
+            "ident": 1008,
+            "ts": "2014-06-25T12:19:29.000+0000",
+            "name": "New permission",
+            "description": null,
+            "table_name": "customer",
+            "column_names": null,
+            "predicate": null,
+            "access_type": "R",
+            "role_ident": 1006
+          }
+        ]
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles/1005",
+          "checksum": "A:013762c35536ec4b"
+        },
+        "ident": 1005,
+        "ts": "2014-06-24T20:36:59.000+0000",
+        "name": "LoginRole",
+        "description": null,
+        "default_permission": "R",
+        "default_apivisibility": "PM",
+        "project_ident": 1000,
+        "ApiKeyRoles": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1020",
+              "checksum": "A:cdf615c727437756"
+            },
+            "ident": 1020,
+            "ts": "2014-06-24T20:38:22.000+0000",
+            "apikey_ident": 1020,
+            "role_ident": 1005
+          }
+        ],
+        "PermissionData": [
+        ],
+        "TablePermissions": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1007",
+              "checksum": "A:cacc78028b6e66b2"
+            },
+            "ident": 1007,
+            "ts": "2014-06-24T20:44:48.000+0000",
+            "name": "Logon",
+            "description": "{username and password }",
+            "table_name": "employee",
+            "column_names": "",
+            "predicate": null,
+            "access_type": "R",
+            "role_ident": 1005
+          }
+        ]
+      },
+      {
+        "@metadata": {
+          "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles/1002",
+          "checksum": "A:e26362f970877cc3"
+        },
+        "ident": 1002,
+        "ts": "2014-06-23T12:31:15.000+0000",
+        "name": "Sales Rep",
+        "description": "Preselects orders",
+        "default_permission": "N",
+        "default_apivisibility": "RM",
+        "project_ident": 1000,
+        "ApiKeyRoles": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.ApiKeyRoles/1002",
+              "checksum": "A:e697322941418619"
+            },
+            "ident": 1002,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "apikey_ident": 1002,
+            "role_ident": 1002
+          }
+        ],
+        "PermissionData": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.PermissionData/1000",
+              "checksum": "A:4934d73f354bf9c0"
+            },
+            "ident": 1000,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "current_employee_row",
+            "description": null,
+            "query": "* from employee where login = '@{_apikey.user_identifier}' ",
+            "query_order": 1,
+            "required": true,
+            "code_type": "SQL",
+            "role_ident": 1002
+          }
+        ],
+        "TablePermissions": [
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1005",
+              "checksum": "A:0c8e21aa7b76e79d"
+            },
+            "ident": 1005,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "My Orders - no update of paid flag",
+            "description": "Read, insert and delete my orders (see Globals tab), cannot update paid flag",
+            "table_name": "PurchaseOrder",
+            "column_names": "paid",
+            "predicate": "salesrep_id = @{current_employee_row.employee_id}",
+            "access_type": "RID",
+            "role_ident": 1002
+          },
+          {
+            "@metadata": {
+              "href": "https://demotest.espressologic.com/rest/abl/admin/v2/ProjectExport.Roles.TablePermissions/1006",
+              "checksum": "A:197d12d4586c3401"
+            },
+            "ident": 1006,
+            "ts": "2014-06-23T12:31:15.000+0000",
+            "name": "My Orders Write",
+            "description": "read, insert and delete my orders (see Globals tab), any columns",
+            "table_name": "PurchaseOrder",
+            "column_names": "order_number,amount_total,notes,customer_name,salesrep_id",
+            "predicate": "salesrep_id = @{current_employee_row.employee_id}",
+            "access_type": "A",
+            "role_ident": 1002
+          }
+        ]
+      }
+    ]
+  }
+]
