@@ -70,8 +70,10 @@ function RESTAuthSecurityProviderCreate() {
 			} else {
 				// change the field name below .name to the name of your
 				// roleName column
+				errorMsg = 'Username ' + payload.username + ' not found with password';
 				for ( var row in groups) {
 					roles.push(groups[row].name);
+					errorMsg = null; //if one role is found then we are good to return
 				}
 			}
 		} catch (e) {
